@@ -35,64 +35,66 @@ export class InformationPage {
     console.log('ionViewDidLoad InformationPage');
   }
 
-  public depressOpen(): void {
-    let modal = this.modalCtrl.create(DepressionPage);
+  // public depressOpen(): void {
+  //   let modal = this.modalCtrl.push(DepressionPage);
 
-    modal.present();
+  //   modal.present();
+  // }
+
+  depressOpen(){
+    this.navCtrl.push(DepressionPage);
   }
 
-  public anxietyOpen(): void {
-    let modal = this.modalCtrl.create(AnxietyPage);
+  anxietyOpen() {
+    this.navCtrl.push(AnxietyPage);
 
-    modal.present();
   }
 
-  public eatingOpen(): void {
-    let modal = this.modalCtrl.create(EatingPage);
+   eatingOpen() {
+    this.navCtrl.push(EatingPage);
 
-    modal.present();
+    
   }
 
-  public relationOpen(): void {
-    let modal = this.modalCtrl.create(RelationPage);
+   relationOpen() {
+    this.navCtrl.push(RelationPage);
 
-    modal.present();
+    
   }
 
-  public bullyingOpen(): void {
-    let modal = this.modalCtrl.create(BullyingPage);
+   bullyingOpen() {
+    this.navCtrl.push(BullyingPage);
 
-    modal.present();
+    
   }
 
-  public alcoholOpen(): void {
-    let modal = this.modalCtrl.create(AlcoholPage);
+   alcoholOpen() {
+    this.navCtrl.push(AlcoholPage);
 
-    modal.present();
+    
   }
 
-  public drugsOpen(): void {
-    let modal = this.modalCtrl.create(DrugsPage);
+   drugsOpen() {
+    this.navCtrl.push(DrugsPage);
 
-    modal.present();
+    
   }
 
-  public psychOpen(): void {
-    let modal = this.modalCtrl.create(PsychPage);
+   psychOpen() {
+    this.navCtrl.push(PsychPage);
 
-    modal.present();
+    
   }
 
-  public suicideOpen(): void {
-    let modal = this.modalCtrl.create(SuicidePage);
+   suicideOpen() {
+    this.navCtrl.push(SuicidePage);
 
-    modal.present();
+    
   }
 
-  public griefOpen(): void {
-    let modal = this.modalCtrl.create(GriefPage);
+   griefOpen() {
+    this.navCtrl.push(GriefPage);
 
-    modal.present();
   }
 }
 
