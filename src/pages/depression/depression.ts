@@ -1,3 +1,4 @@
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { Http } from '@angular/http';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -17,11 +18,11 @@ import 'rxjs/add/operator/map';
 })
 
 export class DepressionPage {
-
+  url: 'http://www.kerrycoco.ie/homeless-services/';
   information: any;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private http: Http) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private http: Http, private inappBrowser: InAppBrowser) {
     let localData = this.http.get('assets/information.json').map(res => res.json().depression);
     localData.subscribe(data => {
       this.information = data;
@@ -38,10 +39,14 @@ export class DepressionPage {
     this.information[i].children[j].open = !this.information[i].children[j].open;
   }
 
+// INAPPBROWSER TEST
+openWebpage(url){
+  this.inappBrowser.create(url, '_self');
+  // browser.on('').subscribe()
 
+}
 
   ionViewDidLoad() {
-
 
   }
 

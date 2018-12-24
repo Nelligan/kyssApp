@@ -16,6 +16,13 @@
 </ion-header>
 
 <ion-content padding>
+    <!-- IN-APP-BROWSER -->
+    <ion-item>
+        <h2>IN_APP_BROWSER TEST</h2>
+        <button ion-button block (click)="openWebpage(url)">URL LINK</button>
+      </ion-item>
+
+      <!-- ACCORDION -->
   <ion-list class="accordion-list">
     <!--First Level-->
     <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>

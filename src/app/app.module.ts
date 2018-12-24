@@ -29,6 +29,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import{HttpModule} from '@angular/http';
 
 
+// PLUGINS
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -77,6 +81,7 @@ import{HttpModule} from '@angular/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    InAppBrowser
     
   ]
 })
