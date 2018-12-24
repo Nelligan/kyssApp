@@ -18,7 +18,6 @@ import 'rxjs/add/operator/map';
 })
 
 export class DepressionPage {
-  url: 'http://www.kerrycoco.ie/homeless-services/';
   information: any;
 
 
@@ -40,7 +39,8 @@ export class DepressionPage {
   }
 
 // INAPPBROWSER TEST
-openWebpage(url){
+openWebpage(){
+  let url: 'http://www.kerrycoco.ie/homeless-services/';
   this.inappBrowser.create(url, '_self');
   // browser.on('').subscribe()
 
